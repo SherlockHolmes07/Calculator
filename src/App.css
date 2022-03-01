@@ -8,7 +8,6 @@ body{
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 150px;
   width: 300px;
   
 }
@@ -22,4 +21,15 @@ button{
   margin: 1px;
   margin-bottom: 0px;
   height: 50px;
+}
+
+.display{
+    position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+   height: 80px;
+   background-color: black;;
+   width: 300px;
+  border-radius: 2px;
 }

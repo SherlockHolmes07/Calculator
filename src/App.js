@@ -1,11 +1,15 @@
 import './App.css';
 import Button from "./Component/Button.js"
+import Display from "./Component/Display.js"
 import React from "react"
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <Display />
+      <div  className="App">
       <Button />
+      </div>
     </div>
   );
 }
