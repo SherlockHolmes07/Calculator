@@ -6,7 +6,6 @@ import React from "react"
 function App() {
 
   const [que,setQue] = React.useState("0");
-  const [ans,setAns] = React.useState("");
   const operators = /[+/*-]/;
   const opArray = ["+","-","*","/"];
   
@@ -42,11 +41,15 @@ function App() {
     setQue(eval(que).toString());
   }
 
+  function del(){
+    setQue(que.substring(0, que.length - 1));
+  }
+
   return (
     <div>
       <Display que={que}/>
       <div  className="App">
-      <Button update={update} clear={clear} final={final}/>
+      <Button update={update} clear={clear} final={final} del={del}/>
       </div>
     </div>
   );

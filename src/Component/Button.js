@@ -5,7 +5,7 @@ export default function Button(props){
     <div class="butt">
      <div className="row">
        <button type="button" class="btn btn-danger col-2" id="clear" onClick={props.clear}>AC</button>
-      <button type="button" class="btn btn-danger col-2" id="back">{reg}</button>
+      <button type="button" class="btn btn-danger col-2" id="back" onClick={props.del}>{reg}</button>
            <button type="button" class="btn btn-info col-2 " id="divide" onClick={() => props.update("/")}>/</button>
 
        <button type="button" class="btn btn-info col-2 " id="multiply" onClick={() => props.update("*")}>x</button>
