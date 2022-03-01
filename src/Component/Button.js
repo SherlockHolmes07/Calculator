@@ -1,10 +1,11 @@
 import React from "react"
-
+const reg = "<-";
 export default function Button(props){
   return (
     <div class="butt">
      <div className="row">
-       <button type="button" class="btn btn-danger col-4" id="clear" onClick={props.clear}>AC</button>
+       <button type="button" class="btn btn-danger col-2" id="clear" onClick={props.clear}>AC</button>
+      <button type="button" class="btn btn-danger col-2" id="back">{reg}</button>
            <button type="button" class="btn btn-info col-2 " id="divide" onClick={() => props.update("/")}>/</button>
 
        <button type="button" class="btn btn-info col-2 " id="multiply" onClick={() => props.update("*")}>x</button>
